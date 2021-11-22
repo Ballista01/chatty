@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdl_btns_hori3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="594dp" />
+
+    <Button
+        android:id="@+id/btn_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toStartOf="@+id/gdl_vertical_center"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/gdl_left_margin"
+        app:layout_constraintTop_toTopOf="@+id/gdl_btns_hori" />
+
+    <ImageView
+        android:id="@+id/chatty_logo"
+        android:layout_width="139dp"
+        android:layout_height="148dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/gdl_email_hori"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_bubble_chart_24" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdl_email_hori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="310dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdl_pwd_hori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="385dp" />
+
+    <EditText
+        android:id="@+id/email_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toStartOf="@+id/gdl_right_margin"
+        app:layout_constraintStart_toStartOf="@+id/gdl_left_margin"
+        app:layout_constraintTop_toTopOf="@+id/gdl_email_hori" />
+
+    <EditText
+        android:id="@+id/password_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toStartOf="@+id/gdl_right_margin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gdl_left_margin"
+        app:layout_constraintTop_toTopOf="@+id/gdl_pwd_hori" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdl_left_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="50dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdl_right_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="361dp" />
+
+    <Button
+        android:id="@+id/btn_log_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        app:layout_constraintEnd_toStartOf="@+id/gdl_right_margin"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="@+id/gdl_vertical_center"
+        app:layout_constraintTop_toTopOf="@+id/gdl_btns_hori" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdl_vertical_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdl_btns_hori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="473dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdl_btns_hori2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="530dp" />
+
+    <Button
+        android:id="@+id/btn_google_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In With Google Account"
+        app:layout_constraintEnd_toStartOf="@+id/gdl_right_margin"
+        app:layout_constraintStart_toStartOf="@+id/gdl_left_margin"
+        app:layout_constraintTop_toTopOf="@+id/gdl_btns_hori2" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="275dp"
+        android:layout_height="126dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/gdl_right_margin"
+        app:layout_constraintStart_toStartOf="@+id/gdl_left_margin"
+        app:layout_constraintTop_toTopOf="@+id/gdl_btns_hori3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

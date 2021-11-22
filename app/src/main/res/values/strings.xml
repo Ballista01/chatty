@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">chatty</string>
+    <string name="web_client_id">99168862354-e6of9ksp33b3mon7ekbfvhdo979giu1h.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">383884103485272</string>
+    <string name="fb_login_protocol_scheme">fb383884103485272</string>
+    <string name="contract_search_hint">search contact</string>
+</resources>
